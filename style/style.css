@@ -1,0 +1,27 @@
+*{
+    text-decoration: none;
+    list-style-type: none;
+}
+
+
+
+:root{
+    --dark-brown: #4e362f;
+    --brown: #725145;
+    --orange: #fc6c40;
+    --light-white:#D7CCC8;
+    --gray: #757575;
+    --dark-text: #212121;
+    --text-icons: #FFFFFF;
+    --divider: #BDBDBD;
+    --title: "Kanit";
+    --text: "Catamaran";
+}
+
+h1{
+    font-family: var(--title);
+}
+
+p{
+    font-family: var(--text);
+}
