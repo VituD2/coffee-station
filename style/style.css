@@ -1,6 +1,14 @@
+/* 12:10am
+19/1
+coffee v1.0 */
+
 *{
-    text-decoration: none;
     list-style-type: none;
+    text-decoration: none;   
+}
+
+a, a:active, a:visited{
+    color: unset;
 }
 
 
@@ -8,14 +16,141 @@
 :root{
     --dark-brown: #4e362f;
     --brown: #725145;
-    --orange: #fc6c40;
+    --orange: #df5d36;
     --light-white:#D7CCC8;
+    --white: #fff;
     --gray: #757575;
     --dark-text: #212121;
     --text-icons: #FFFFFF;
     --divider: #BDBDBD;
     --title: "Kanit";
     --text: "Catamaran";
+}
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--dark-brown);
+    background-color: var(--white);
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+.title{
+    font-family: var(--title);
+}
+
+.text{
+    font-family: var(--text);
+}
+
+.logo-container{
+    margin-left: 4rem;
+    cursor: pointer;
+}
+
+.logo-container abbr{
+    text-decoration: none;
+}
+
+label{
+    font: normal 300 32px var(--title);
+}
+
+label sup{
+    font-size: 0.95rem;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+}
+
+nav ul{
+    display: flex;
+    margin-right: 12rem;
+}
+
+nav ul li{
+    display: flex;
+    font: normal 500 16px var(--text);
+    margin-right: 80px;
+}
+
+nav ul li:hover{
+    text-decoration: underline;
+}
+
+.nav-icon-btns{
+    display: flex;
+    font-size: 17px;
+    height: 22px;
+    line-height: 20px;
+    margin-right: 4rem;
+    color: var(--orange);
+}
+
+.nav-icon-btns i{
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.language-changer{
+    display: flex;
+    font-size: 18px;
+    line-height: 18px;
+}
+
+.language-changer span{
+    font: normal 400 16px var(--title);
+    line-height: 18px;
+}
+
+.language-changer .angle-down{
+    font-size: 20px;
+    padding-left: 2px;
+}
+
+main{
+    display: flex;
+    height: 725px;
+    background: black url('../images/background.jpg') 50% 50% no-repeat;
+    background-size: cover;
+    align-items: center;
+}
+
+.highlight-box{
+    width: 750px;
+    color: #fff;
+    margin-left: 4rem;
+    margin-bottom: 10rem;
+}
+
+.highlight-box .title{
+    font: normal 600 40px var(--title);
+    line-height: 10px;
+}
+
+.highlight-box .text{
+    font: normal 300 20px var(--title);
+    line-height: 22px;
+}   
+
+.explore-btn{
+    display: inline;
+    background-color: var(--orange);
+    font: normal 600 18px var(--text);
+    padding: 2px 22px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .4s ease;
+}
+
+.explore-btn:hover{
+    background-color: #fff;
+    color: var(--orange);
 }
 
 h1{
