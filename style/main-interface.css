@@ -1,6 +1,6 @@
-/* 12:10am
-19/1
-coffee v1.0 */
+/* 9:47am
+20/1
+coffee v1.1 */
 
 *{
     list-style-type: none;
@@ -32,7 +32,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: var(--dark-brown);
+    color: var(--brown);
     background-color: var(--white);
     padding-top: 7px;
     padding-bottom: 7px;
@@ -56,11 +56,12 @@ header{
 }
 
 label{
-    font: normal 300 32px var(--title);
+    font: normal 300 35px var(--title);
 }
 
 label sup{
-    font-size: 0.95rem;
+    font-size: 1.2rem;
+    font-weight: 300;
 }
 
 nav{
@@ -113,35 +114,35 @@ nav ul li:hover{
     padding-left: 2px;
 }
 
-main{
+section.initial-screen{
     display: flex;
-    height: 725px;
-    background: black url('../images/background.jpg') 50% 50% no-repeat;
+    height: 722px;
+    background: black url('../images/finished.jpg') 50% 50% no-repeat;
     background-size: cover;
-    align-items: center;
+    align-items: flex-end;
 }
 
-.highlight-box{
+.explore-box{
     width: 750px;
     color: #fff;
     margin-left: 4rem;
-    margin-bottom: 10rem;
+    margin-bottom: 17rem;
 }
 
-.highlight-box .title{
-    font: normal 600 40px var(--title);
+.explore-box .title{
+    font: normal 600 40.5px var(--title);
     line-height: 10px;
 }
 
-.highlight-box .text{
-    font: normal 300 20px var(--title);
+.explore-box .text{
+    font: normal 300 21px var(--title);
     line-height: 22px;
 }   
 
 .explore-btn{
     display: inline;
     background-color: var(--orange);
-    font: normal 600 18px var(--text);
+    font: normal 600 20px var(--text);
     padding: 2px 22px;
     border-radius: 5px;
     cursor: pointer;
@@ -153,10 +154,15 @@ main{
     color: var(--orange);
 }
 
-h1{
-    font-family: var(--title);
+.dots-slide{
+    display: flex;
+    color: var(--gray);
+    justify-content: center;
+    margin-bottom: 1.5rem;
 }
 
-p{
-    font-family: var(--text);
+.dots-slide i{
+    margin-right: 15px;
+    font-size: 0.57rem;
+    cursor: pointer;
 }
