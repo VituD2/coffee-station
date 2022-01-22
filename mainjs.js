@@ -1,35 +1,43 @@
-let bgimg = document.querySelector('#img1');
-let dot1 = document.querySelector('#dot1').classList.add('currentImgDot');
-let dot2 = document.querySelector('#dot2');
-let dot3 = document.querySelector('#dot3');
+let bgImg = document.querySelector('#img1');
+let link = {
+    link0:'https://media.discordapp.net/attachments/823303452036825129/934218424786235422/coffee-pure.jpg?width=2048&height=1280',
+    link1:'https://media.discordapp.net/attachments/823303452036825129/934218450899976252/making.jpg?width=2048&height=1280',
+    link2:'https://media.discordapp.net/attachments/823303452036825129/934218472127340584/finished.jpg?width=2048&height=1280'
+}
+
 let current = 0;
 
-let link1 = 'https://media.discordapp.net/attachments/823303452036825129/934218424786235422/coffee-pure.jpg?width=2048&height=1280';
 
-let link2 = 'https://media.discordapp.net/attachments/823303452036825129/934218450899976252/making.jpg?width=2048&height=1280';
-let link3 = 'https://media.discordapp.net/attachments/823303452036825129/934218472127340584/finished.jpg?width=2048&height=1280';
-
-let styleBg = window.getComputedStyle(bgimg, false);
+let styleBg = window.getComputedStyle(bgImg, false);
 let currentImg = styleBg.backgroundImage.slice(4, -1).replace(/"/g, "");
 console.log(currentImg);
 
-let pos = document.querySelectorAll('.dot');
+document.getElementById('0').classList.add('currentImgDot')
 
-for(let i=0; i < pos.length; i++) {
-    pos[i].addEventListener('click', ()=>{
-        current = pos[i];
-    });
-}
+let pos = document.querySelectorAll('.slide-dots div');
 
-function slide() {
-    if(current >= 3) {
-        current = 0;
-    } else if(current < 0) {
-        current = 2;
-    }
-    document.querySelector('.currentImgDot').classList.remove('.currentImgDot');
-    
-}
+console.log(pos[1]);
+
+// for(let i=0; i < pos.length; i++) {
+//     pos[i].addEventListener('click', ()=>{
+//         console.log(pos[i].i + 'clicado')
+//         // current = pos[i].id;
+//         // slide();
+//     });
+// }
+
+// function slide() {
+//     if(current >= 3) {
+//         current = 0;
+//     } else if(current < 0) {
+//         current = 2;
+//     }
+//     document.querySelector('.currentImgDot').classList.remove('.currentImgDot');
+//     bgImg.style.backgroundImage = `url(${Object.values(link)[current]})`;
+//     document.querySelector('.currentDot').classList.add('currentImgDot');
+// }
+
+// slide();
 
 
 
@@ -67,21 +75,21 @@ function slide() {
 // }();
 
 // dot1.addEventListener('click', click1 = () => {
-//     bgimg.style.backgroundImage = `url(${link1})`;
+//     bgImg.style.backgroundImage = `url(${link1})`;
 //     dot1.style.color = 'white';
 //     dot2.style.color = '#525252';
 //     dot3.style.color = '#525252';
 // })
 
 // dot2.addEventListener('click', click2 = () => {
-//     bgimg.style.backgroundImage = `url(${link2})`;
+//     bgImg.style.backgroundImage = `url(${link2})`;
 //     dot2.style.color = 'white';
 //     dot1.style.color = '#525252';
 //     dot3.style.color = '#525252';
 // })
 
 // dot3.addEventListener('click', click3 = () => {
-//     bgimg.style.backgroundImage = `url(${link3})`;
+//     bgImg.style.backgroundImage = `url(${link3})`;
 //     dot3.style.color = 'white';
 //     dot1.style.color = '#525252';
 //     dot2.style.color = '#525252';
