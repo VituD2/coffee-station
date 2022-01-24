@@ -5,39 +5,50 @@ let link = {
     link2:'https://media.discordapp.net/attachments/823303452036825129/934218472127340584/finished.jpg?width=2048&height=1280'
 }
 
-let current = 0;
-
+var current = 0;
+let changingImg = true;
 
 let styleBg = window.getComputedStyle(bgImg, false);
 let currentImg = styleBg.backgroundImage.slice(4, -1).replace(/"/g, "");
 console.log(currentImg);
 
-document.getElementById('0').classList.add('currentImgDot')
+document.getElementById(0).classList.add('currentImgDot');
 
-let pos = document.querySelectorAll('.slide-dots div');
+let pos = document.querySelectorAll('.slide-dots i');
 
-console.log(pos[1]);
+// console.log(pos[2]);
 
-// for(let i=0; i < pos.length; i++) {
-//     pos[i].addEventListener('click', ()=>{
-//         console.log(pos[i].i + 'clicado')
-//         // current = pos[i].id;
-//         // slide();
-//     });
-// }
+for(let i=0; i < pos.length; i++) {
+    pos[i].addEventListener('click', ()=>{
+        // console.log(pos[i].i + 'clicado')
+        current = pos[i].id;
+        changingImg = false;
+        slide();
+    });
+}
 
-// function slide() {
-//     if(current >= 3) {
-//         current = 0;
-//     } else if(current < 0) {
-//         current = 2;
-//     }
-//     document.querySelector('.currentImgDot').classList.remove('.currentImgDot');
-//     bgImg.style.backgroundImage = `url(${Object.values(link)[current]})`;
-//     document.querySelector('.currentDot').classList.add('currentImgDot');
-// }
+function slide() {
+    if(current >= 3) {
+        current = 0;
+    } else if(current < 0) {
+        current = 2;
+    }
+    document.querySelector('.currentImgDot').classList.remove('.currentImgDot');
+    bgImg.style.backgroundImage = `url(${Object.values(link)[current]})`;
+    console.log(document.querySelector('.currentImgDot'));
+    document.getElementById([current]).classList.add('currentImgDot');
+}
 
-// slide();
+slide();
+
+setInterval(()=>{
+    if(changingImg){
+        current++;
+        slide();
+    } else {
+        changingImg = true;
+    }
+}, 6000);
 
 
 
