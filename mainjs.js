@@ -33,9 +33,9 @@ function slide() {
     } else if(current < 0) {
         current = 2;
     }
-    document.querySelector('.currentImgDot').classList.remove('.currentImgDot');
+    document.querySelector('.currentImgDot').classList.remove('currentImgDot');
     bgImg.style.backgroundImage = `url(${Object.values(link)[current]})`;
-    console.log(document.querySelector('.currentImgDot'));
+    // console.log(document.querySelector('.currentImgDot'));
     document.getElementById([current]).classList.add('currentImgDot');
 }
 
@@ -49,62 +49,3 @@ setInterval(()=>{
         changingImg = true;
     }
 }, 6000);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// var initt = function condition() {
-//     if(bi == link1) {
-//         dot1.style.color = 'white';
-//         console.log('if1 ' + link1);
-//     } else if (bi == link2) {
-//         dot2.style.color = 'white';
-//         console.log('if2 ' + link2);
-//     } else {
-//         dot3.style.color = 'white';
-//         console.log('if3 ' + link3);
-//     }
-// }();
-
-// dot1.addEventListener('click', click1 = () => {
-//     bgImg.style.backgroundImage = `url(${link1})`;
-//     dot1.style.color = 'white';
-//     dot2.style.color = '#525252';
-//     dot3.style.color = '#525252';
-// })
-
-// dot2.addEventListener('click', click2 = () => {
-//     bgImg.style.backgroundImage = `url(${link2})`;
-//     dot2.style.color = 'white';
-//     dot1.style.color = '#525252';
-//     dot3.style.color = '#525252';
-// })
-
-// dot3.addEventListener('click', click3 = () => {
-//     bgImg.style.backgroundImage = `url(${link3})`;
-//     dot3.style.color = 'white';
-//     dot1.style.color = '#525252';
-//     dot2.style.color = '#525252';
-// })
-
-
-

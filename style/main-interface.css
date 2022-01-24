@@ -1,6 +1,6 @@
-/* 10:00pm
-23/1
-coffee v1.4 */
+/* 2:25pm
+24/1
+coffee v1.5 */
 
 *{
     list-style-type: none;
@@ -14,7 +14,7 @@ a, a:active, a:visited{
 :root{
     --dark-brown: #4e362f;
     --brown: #725145;
-    --orange: #cf6c4e;
+    --orange: #dd6c49;
     --light-white:#D7CCC8;
     --white: #fff;
     --gray: #757575;
@@ -46,10 +46,15 @@ div.header-container{
     padding: 0 80px;
 }
 
+abbr{
+    text-decoration: none !important;
+}
+
 label{
     display: table;
     font: normal 300 35px var(--title);
     color: var(--brown);
+    cursor: pointer;
 }
 
 label sup{
@@ -74,6 +79,10 @@ nav ul li{
     color: var(--brown);
 }
 
+nav ul li:hover{
+    text-decoration: underline;
+}
+
 .nav-icon-btns{
     display: flex;
     color: var(--orange);
@@ -82,6 +91,10 @@ nav ul li{
 .nav-icon-btns i, .lang-changer{
     margin-left: 15px;
     cursor: pointer;
+}
+
+.nav-icon-btns i:hover, .lang-changer:hover{
+    color: #eea473;
 }
 
 .lang-changer{
@@ -96,12 +109,12 @@ nav ul li{
 
 main{
     width: 100vw;
-    height: 736px;
+    min-height: 736px;
 }
 
 .initial-screen{
     min-width: 100vw;
-    height: 736px;
+    height: calc(100vh - 59px);
 }
 
 .slide-background{
@@ -138,4 +151,97 @@ main{
 
 .currentImgDot{
 color: white!important;
+}
+
+.explore-box{
+    display: flex;
+    position: absolute;
+    margin-left: 80px;
+    margin-top: calc(15%);
+}
+
+.explore h1{
+    font: normal 600 35px var(--title);
+    color: #fff;
+    line-height: 40px;
+}
+
+.explore p{
+    font: normal 500 17px var(--text);
+    line-height: 12px;
+    color: #fff;
+}
+
+.explore-btn{
+    display: inline;
+    background-color: var(--orange);
+    font: normal 600 20px var(--text);
+    padding: 2px 20px;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: all .4s ease;
+    color: #fff;
+}
+
+.explore-btn:hover{
+    background-color: #fff;
+    color: var(--orange);
+}
+
+main{
+    background-color: var(--white);
+}
+
+.type1{
+    display: flex;
+    padding-left: 80px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    cursor: pointer;
+    margin-top: 200px;
+}
+
+.type1:hover{
+    background-color: #8b8b8b10;
+}
+
+.type-content{
+    display: flex;
+    width: 100%;
+}
+
+img{
+    display: inline-flex;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: #000;
+    border: solid 4px var(--brown);
+}
+
+.text-type{
+    margin-top: 25px;
+    margin-left: 15px;
+}
+
+.text-type h1{
+    font: normal 600 30px var(--title);
+    color: var(--brown);
+    line-height: 20px;
+}
+
+.text-type p{
+    font: normal 500 18px var(--text);
+    line-height: 20px;
+}
+
+.angle-more{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.angle-more i{
+    font-size: 40px;
+    color: var(--brown);
 }
