@@ -1,6 +1,6 @@
-/*12:00pm
+/*7:32pm
 25/1
-coffee v1.9 */
+coffee v2.0 */
 @charset "UTF-8";
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
@@ -219,6 +219,7 @@ section.types{
     min-height: 700px;
     justify-content: center;
     scrollbar-gutter: stable;
+    margin-top: 150px;
 }
 
 .types-h1{
@@ -263,15 +264,18 @@ section.types{
 }
 
 .text-type h1{
-    font: normal 600 33px var(--title);
+    font: normal 300 33px var(--title);
     color: var(--darker-brown);
     line-height: 20px;
+    letter-spacing: 1.3rem;
+    text-transform: uppercase;
 }
 
 .text-type p{
-    font: normal 300 21px var(--text);
-    line-height: 22px;
+    font: normal 200 21px var(--text);
+    line-height: 24px;
     color: #fff;
+    letter-spacing: 0.1rem;
 }
 
 .angle-more{
@@ -282,12 +286,24 @@ section.types{
 
 .angle-more i{
     font-size: 40px;
-    color: var(--dark-brown);
+    color: var(--darker-brown);
 }
 
-.angle-more:hover{
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.075), transparent);
+.angle-hover::after{
+    background-image: linear-gradient(to top, #00000083, transparent);
+    animation: ang-hov-anim .6s;
 }
+
+/* ANGLE DOWN HOVER */
+
+@keyframes ang-hov-anim{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+
+/* .angle-more:hover{
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.075), transparent);
+} */
 
 /* TYPE 2 */
 .type2{
@@ -323,28 +339,25 @@ section.types{
 }
 
 .text-type2 h1{
-    font: normal 600 33px var(--title);
+    font: normal 300 33px var(--title);
     color: var(--orange);
     line-height: 20px;
+    letter-spacing: 1.3rem;
+    text-transform: uppercase;
 }
 
 .text-type2 p{
-    font: normal 300 21px var(--text);
-    line-height: 22px;
+    font: normal 200 21px var(--text);
+    line-height: 24px;
     color: #fff;
+    letter-spacing: 0.1rem;
 }
 
-.angle-more2{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-}
-
-.angle-more2:hover{
+/* .angle-more2:hover{
     background-image: linear-gradient(to top, rgba(0, 0, 0, 0.075), var(--light-orange));
-}
+} */
 
-.angle-more2 i{
+.type2 .angle-more i{
     font-size: 40px;
     color: var(--orange);
 }
@@ -363,9 +376,9 @@ section.types{
     color: var(--dark-red);
 }
 
-.type3 .angle-more:hover{
+/* .type3 .angle-more:hover{
     background-image: linear-gradient(to top, rgba(0, 0, 0, 0.075), var(--light-red));
-}
+} */
 
 .type3 .angle-more i{
     color: var(--dark-red);
@@ -385,11 +398,11 @@ section.types{
     color: var(--bourbon-dark-brown);
 }
 
-.type4 .angle-more2:hover{
+/* .type4 .angle-more2:hover{
     background-image: linear-gradient(to top, rgba(0, 0, 0, 0.075), var(--bourbon-light-brown));
-}
+} */
 
-.type4 .angle-more2 i{
+.type4 .angle-more i{
     color: var(--bourbon-dark-brown);
 }
 
@@ -407,9 +420,9 @@ section.types{
     color: var(--yellow);
 }
 
-.type5 .angle-more:hover{
+/* .type5 .angle-more:hover{
     background-image: linear-gradient(to top, rgba(0, 0, 0, 0.075), var(--light-yellow));
-}
+} */
 
 .type5 .angle-more i{
     color: var(--yellow);

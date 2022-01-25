@@ -1,4 +1,4 @@
-// v1.9
+// v2.0
 // for getting div details working 
 // next step = do the arrow down hover in js , then i'll be able to add a transition value;
 //             Do the "read more" script
@@ -56,6 +56,28 @@ setInterval(()=>{
     }
 }, 6000);
 
+// ANGLE DOWN HOVER 
+// let angle_down = document.querySelectorAll('.angle-more');
+
+// for (let i = 0; i < angle_down.length; i++) {
+//     angle_down[i].addEventListener('mouseenter', (e)=>{
+//         // console.log(e.currentTarget);
+//         e.currentTarget.classList.toggle('angle-hover');
+//         // angle_down[i].style.backgroundImage = 'linear-gradient(to top, #00000083, transparent)';
+//     });
+//     angle_down[i].addEventListener('mouseleave', (e)=>{
+//         e.currentTarget.classList.toggle('angle-hover');
+//         // angle_down[i].style.backgroundImage = 'none'
+//     });
+// }
+
+
+
+
+
+
+
+
 
 // TYPES OF COFFEE READ MORE SCRIPT
 
@@ -66,3 +88,4 @@ for (let i = 0; i < type_cont.length; i++) {
 
     });  
 }
+
