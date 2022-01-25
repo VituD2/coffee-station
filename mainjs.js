@@ -1,3 +1,9 @@
+// v1.9
+// for getting div details working 
+// next step = do the arrow down hover in js , then i'll be able to add a transition value;
+//             Do the "read more" script
+
+// INITIAL SCREEN SLIDE 
 let bgImg = document.querySelector('#img1');
 let link = {
     link0:'https://media.discordapp.net/attachments/823303452036825129/934218424786235422/coffee-pure.jpg?width=2048&height=1280',
@@ -49,3 +55,14 @@ setInterval(()=>{
         changingImg = true;
     }
 }, 6000);
+
+
+// TYPES OF COFFEE READ MORE SCRIPT
+
+let type_cont = document.querySelectorAll('#type-cont');
+
+for (let i = 0; i < type_cont.length; i++) {
+    type_cont[i].addEventListener('click', ()=>{
+
+    });  
+}

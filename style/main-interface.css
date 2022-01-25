@@ -1,6 +1,6 @@
-/*11:33am
+/*12:00pm
 25/1
-coffee v1.8 */
+coffee v1.9 */
 @charset "UTF-8";
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
@@ -222,10 +222,10 @@ section.types{
 }
 
 .types-h1{
-    font: normal 300 55px var(--poppins);
+    font: normal 200 55px var(--poppins);
     line-height: 150px;
     color: var(--brown);
-    letter-spacing: 2rem;
+    letter-spacing: 2.8rem;
 }
 
 /* TYPE 1 */
@@ -269,8 +269,8 @@ section.types{
 }
 
 .text-type p{
-    font: normal 400 20px var(--text);
-    line-height: 20px;
+    font: normal 300 21px var(--text);
+    line-height: 22px;
     color: #fff;
 }
 
@@ -286,7 +286,7 @@ section.types{
 }
 
 .angle-more:hover{
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.075), var(--brown));
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.075), transparent);
 }
 
 /* TYPE 2 */
@@ -329,8 +329,8 @@ section.types{
 }
 
 .text-type2 p{
-    font: normal 400 20px var(--text);
-    line-height: 20px;
+    font: normal 300 21px var(--text);
+    line-height: 22px;
     color: #fff;
 }
 
@@ -349,7 +349,7 @@ section.types{
     color: var(--orange);
 }
 
-
+/* TYPE 3 */
 .type3{
     background-color: var(--light-red); 
     border-radius: 10px;
@@ -371,6 +371,7 @@ section.types{
     color: var(--dark-red);
 }
 
+/* TYPE 4 */
 .type4{
     background-color: var(--bourbon-light-brown); 
     border-radius: 10px;
@@ -392,6 +393,7 @@ section.types{
     color: var(--bourbon-dark-brown);
 }
 
+/* TYPE 5 */
 .type5{
     background-color: var(--light-yellow); 
     border-radius: 10px;
