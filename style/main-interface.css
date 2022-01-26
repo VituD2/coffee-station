@@ -1,6 +1,6 @@
-/*7:32pm
-25/1
-coffee v2.0 */
+/*1:20am
+26/1
+coffee v2.0b */
 @charset "UTF-8";
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
@@ -25,7 +25,7 @@ a, a:active, a:visited{
     --bourbon-dark-brown: #582c09;
     --bourbon-light-brown: #a07758;
     --dark-red: #a31519;
-    --light-red: #ca6063;
+    --light-red: #d36266;
     --light-white:#D7CCC8;
     --white: #fff;
     --gray: #757575;
@@ -236,11 +236,34 @@ section.types{
     flex-direction: column;
     cursor: pointer;
     max-width: calc(100vw - 93px);
-    background-color: var(--brown);
+    background-image: linear-gradient(to right,#553c34, var(--brown));
     width: 100%;
     border-radius: 10px;
 }
 
+.type-cont-hov{
+    background-color: #000000a6;
+}
+
+/* .type1:hover{
+    background-image: linear-gradient(to right,#5c4239, transparent);
+}
+
+.type2:hover{
+    background-image: linear-gradient(to left,#d88b58, transparent);
+}
+
+.type3:hover{
+    background-image: linear-gradient(to right,#a54d50, transparent);
+}
+
+.type4:hover{
+    background-image: linear-gradient(to left,#8f6647, transparent);
+}
+
+.type5:hover{
+    background-image: linear-gradient(to right,#daa33d, transparent);
+} */
 /* .type1:hover{
     background-color: #f8f8f8;
 } */
@@ -294,17 +317,6 @@ section.types{
     animation: ang-hov-anim .6s;
 }
 
-/* ANGLE DOWN HOVER */
-
-@keyframes ang-hov-anim{
-    from{opacity: 0;}
-    to{opacity: 1;}
-}
-
-/* .angle-more:hover{
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.075), transparent);
-} */
-
 /* TYPE 2 */
 .type2{
     display: flex;
@@ -314,7 +326,7 @@ section.types{
     max-width: calc(100vw - 93px);
     width: 100%;
     border-radius: 10px;
-    background-color: var(--light-orange);
+    background-image: linear-gradient(to left,#da7c50, var(--light-orange));
 }
 
 .type-content2{
@@ -364,7 +376,7 @@ section.types{
 
 /* TYPE 3 */
 .type3{
-    background-color: var(--light-red); 
+    background-image: linear-gradient(to right,#b63b3f, var(--light-red));
     border-radius: 10px;
 }
 
@@ -386,7 +398,7 @@ section.types{
 
 /* TYPE 4 */
 .type4{
-    background-color: var(--bourbon-light-brown); 
+    background-image: linear-gradient(to left,#8f6647, var(--bourbon-light-brown));
     border-radius: 10px;
 }
 
@@ -408,7 +420,7 @@ section.types{
 
 /* TYPE 5 */
 .type5{
-    background-color: var(--light-yellow); 
+    background-image: linear-gradient(to right,#e09e49, var(--light-yellow));
     border-radius: 10px;
 }
 
