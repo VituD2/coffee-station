@@ -1,6 +1,6 @@
-/*1:20am
-26/1
-coffee v2.0b */
+/*12:00pm
+27/1
+coffee v2.2  */
 @charset "UTF-8";
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
@@ -20,7 +20,7 @@ a, a:active, a:visited{
     --brown: #725145;
     --orange: #e2653f;
     --light-yellow: #e7b557;
-    --yellow: #e48a23;
+    --yellow: #dfc241;
     --light-orange: #eea473;
     --bourbon-dark-brown: #582c09;
     --bourbon-light-brown: #a07758;
@@ -30,7 +30,7 @@ a, a:active, a:visited{
     --white: #fff;
     --gray: #757575;
     --mid-gray: #525252;
-    --dark-text: #212121;
+    --dark-gray: #212121;
     --text-icons: #FFFFFF;
     --divider: #BDBDBD;
     --title: "Kanit";
@@ -220,6 +220,8 @@ section.types{
     justify-content: center;
     scrollbar-gutter: stable;
     margin-top: 150px;
+    flex-direction: column;
+    align-items: center;
 }
 
 .types-h1{
@@ -229,44 +231,33 @@ section.types{
     letter-spacing: 2.8rem;
 }
 
+#more-cont{
+    transition: all .5s;
+}
+
 /* TYPE 1 */
 .type1{
     display: flex;
-    position: absolute;
+    position: relative;
     flex-direction: column;
     cursor: pointer;
     max-width: calc(100vw - 93px);
-    background-image: linear-gradient(to right,#553c34, var(--brown));
+    background-image: linear-gradient(to right,#463129 -10%, #553c34,#553c34, var(--brown));
+    background-size: 300%;
+    background-position: right;
     width: 100%;
     border-radius: 10px;
+    transition: background-position .5s ease;
+    margin-top: 50px;
 }
 
 .type-cont-hov{
     background-color: #000000a6;
 }
 
-/* .type1:hover{
-    background-image: linear-gradient(to right,#5c4239, transparent);
+ .type1:hover{
+     background-position: left;
 }
-
-.type2:hover{
-    background-image: linear-gradient(to left,#d88b58, transparent);
-}
-
-.type3:hover{
-    background-image: linear-gradient(to right,#a54d50, transparent);
-}
-
-.type4:hover{
-    background-image: linear-gradient(to left,#8f6647, transparent);
-}
-
-.type5:hover{
-    background-image: linear-gradient(to right,#daa33d, transparent);
-} */
-/* .type1:hover{
-    background-color: #f8f8f8;
-} */
 
 .type-content{
     display: flex;
@@ -301,6 +292,19 @@ section.types{
     letter-spacing: 0.1rem;
 }
 
+.more-content{
+    font: normal 200 21px var(--text);
+    line-height: 24px;
+    color: #fff;
+    letter-spacing: 0.1rem;
+    padding: 0 120px;
+}
+
+.more-content-hide{
+    height: 0px;
+    opacity: 0;
+}
+
 .angle-more{
     display: flex;
     justify-content: center;
@@ -312,21 +316,24 @@ section.types{
     color: var(--darker-brown);
 }
 
-.angle-hover::after{
-    background-image: linear-gradient(to top, #00000083, transparent);
-    animation: ang-hov-anim .6s;
-}
-
 /* TYPE 2 */
 .type2{
     display: flex;
-    position: absolute;
+    position: relative;
     flex-direction: column;
     cursor: pointer;
     max-width: calc(100vw - 93px);
     width: 100%;
     border-radius: 10px;
-    background-image: linear-gradient(to left,#da7c50, var(--light-orange));
+    background-image: linear-gradient(to left, #ee8549,#fc9652, #fc9652, var(--light-orange));
+    background-size: 300%;
+    background-position: left;
+    transition: .4s background-position ease;
+    margin-top: 50px;
+}
+
+.type2:hover{
+    background-position: right;
 }
 
 .type-content2{
@@ -376,8 +383,14 @@ section.types{
 
 /* TYPE 3 */
 .type3{
-    background-image: linear-gradient(to right,#b63b3f, var(--light-red));
+    background-image: linear-gradient(to right,#d4474c ,#d34d51 ,#d15256, var(--light-red));
     border-radius: 10px;
+    background-position: right;
+    transition: .4s background-position ease;
+}
+
+.type3:hover{
+    background-position: left;
 }
 
 .type3 img{
@@ -398,8 +411,14 @@ section.types{
 
 /* TYPE 4 */
 .type4{
-    background-image: linear-gradient(to left,#8f6647, var(--bourbon-light-brown));
+    background-image: linear-gradient(to left,#7e5739 ,#916442 ,#8f6647, var(--bourbon-light-brown));
     border-radius: 10px;
+    background-position: left;
+    transition: .4s background-position ease;
+}
+
+.type4:hover{
+    background-position: right;
 }
 
 .type4 img{
@@ -420,8 +439,14 @@ section.types{
 
 /* TYPE 5 */
 .type5{
-    background-image: linear-gradient(to right,#e09e49, var(--light-yellow));
+    background-image: linear-gradient(to right,#db9341 ,#d8963f ,#e09e49, var(--light-yellow));
     border-radius: 10px;
+    background-position: right;
+    transition: .4s background-position ease;
+}
+
+.type5:hover{
+    background-position: left;
 }
 
 .type5 img{

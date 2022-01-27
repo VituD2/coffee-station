@@ -1,7 +1,5 @@
-// v2.0b
-// for getting div details working 
-// next step = do the arrow down hover in js , then i'll be able to add a transition value;
-//             Do the "read more" script
+// v2.2
+// Necessario achar uma forma de acessar o more_content especifico de cada type_cont
 
 // INITIAL SCREEN SLIDE 
 let bgImg = document.querySelector('#img1');
@@ -65,21 +63,16 @@ for (let i = 0; i < type_containers.length; i++) {
     });
 }
 
-
-
-
-
-
-
-
-
 // TYPES OF COFFEE READ MORE SCRIPT
 
-let type_cont = document.querySelectorAll('#type-cont');
+let current_type = 1;
 
-for (let i = 0; i < type_cont.length; i++) {
-    type_cont[i].addEventListener('click', ()=>{
-
-    });  
+for (let i=1; i < 6; i++) {
+    current_type = i;
+    let type_cont = document.querySelector('.type'+[current_type]);
+    type_cont.addEventListener('click', ()=>{
+        console.log(type_cont);
+        let more_cont = document.querySelector('.more-content');
+        console.log(more_cont);
+    });
 }
-
