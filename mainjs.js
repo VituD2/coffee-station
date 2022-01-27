@@ -1,5 +1,6 @@
-// v2.2
-// Necessario achar uma forma de acessar o more_content especifico de cada type_cont
+// v2.3
+// Show more-content working 
+// Needing a solution to apply an animation to that
 
 // INITIAL SCREEN SLIDE 
 let bgImg = document.querySelector('#img1');
@@ -65,14 +66,18 @@ for (let i = 0; i < type_containers.length; i++) {
 
 // TYPES OF COFFEE READ MORE SCRIPT
 
+// let more_cont = document.querySelector('.type1 .more-content');
+// console.log(more_cont);
+
 let current_type = 1;
 
 for (let i=1; i < 6; i++) {
     current_type = i;
     let type_cont = document.querySelector('.type'+[current_type]);
     type_cont.addEventListener('click', ()=>{
-        console.log(type_cont);
-        let more_cont = document.querySelector('.more-content');
+        // console.log(type_cont);
+        let more_cont = type_cont.childNodes[3];
         console.log(more_cont);
+        more_cont.classList.toggle('more-content-hide');
     });
 }
