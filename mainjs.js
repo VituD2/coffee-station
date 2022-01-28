@@ -1,6 +1,7 @@
-// v2.5
+// v2.6
 // Show more-content working 
 // Animation more-content working
+// Back-to-top script working
 // Need to make a script that keep type_cont background-position equals to the hover (background color will be static until i close the more-content window) !!!POSTPONE THIS!!!
 
 // INITIAL SCREEN SLIDE 
@@ -56,6 +57,21 @@ setInterval(()=>{
     }
 }, 6000);
 
+//CHECK SCROLL & CLICK TO GO TO TOP
+let arrowUp = document.querySelector('.arrowUp');
+
+window.onscroll = ()=>{
+    function scrollFunc() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            arrowUp.classList.add('arrowUp-active');
+        } else {
+            arrowUp.classList.remove('arrowUp-active');
+        }
+    }
+    scrollFunc();
+}
+
+
 // TYPE CONTAINER HOVER
 let type_containers = document.querySelectorAll('#type-cont');
 
@@ -81,3 +97,6 @@ for (let i=1; i < 6; i++) {
         more_cont.classList.toggle('more-content-active');
     });
 }
+
+
+
