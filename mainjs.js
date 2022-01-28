@@ -1,7 +1,7 @@
-// v2.4
+// v2.5
 // Show more-content working 
 // Animation more-content working
-// Need to make a script that keep type_cont back-position equals to the hover (background color will be static until i close the more-content window)
+// Need to make a script that keep type_cont background-position equals to the hover (background color will be static until i close the more-content window) !!!POSTPONE THIS!!!
 
 // INITIAL SCREEN SLIDE 
 let bgImg = document.querySelector('#img1');
@@ -70,25 +70,6 @@ for (let i = 0; i < type_containers.length; i++) {
 // let more_cont = document.querySelector('.type1 .more-content');
 // console.log(more_cont);
 
-let current_type = 1;
-let size; 
-
-let left = '0% 50%';
-let right = '100% 50%';
-
-function checkSide(res) {
-    return res, ()=>{
-        if (!right) {
-            size = left;
-            return size;
-        } else {
-            size = right;
-            return size;
-        }
-    }
-}
-
-
 
 for (let i=1; i < 6; i++) {
     current_type = i;
@@ -98,14 +79,5 @@ for (let i=1; i < 6; i++) {
         let more_cont = type_cont.childNodes[3];
         console.log(more_cont);
         more_cont.classList.toggle('more-content-active');
-
-        let styleBgPos = window.getComputedStyle(type_cont, false);
-        let currentPos = styleBgPos.backgroundPosition;
-        checkSide(currentPos);
-        function staticColor() {
-            if (type_cont.childNodes[3].id == 'more-content')
-            currentPos = size;   
-        }
-        staticColor();
     });
 }
