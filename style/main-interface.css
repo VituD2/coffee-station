@@ -1,6 +1,6 @@
-/*7:32pm
-28/1
-coffee v2.6  */
+/*9:40am
+29/1
+coffee v2.7  */
 @charset "UTF-8";
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
@@ -274,7 +274,7 @@ section.types{
     background-image: linear-gradient(to right,#463129 -10%, #553c34,#553c34, var(--brown));
     background-size: 300%;
     background-position: right;
-    width: 100%;
+    width: 90%;
     border-radius: 10px;
     transition: background-position .5s ease;
     margin-top: 50px;
@@ -360,7 +360,7 @@ section.types{
     flex-direction: column;
     cursor: pointer;
     max-width: calc(100vw - 93px);
-    width: 100%;
+    width: 90%;
     border-radius: 10px;
     background-image: linear-gradient(to left, #ee8549,#fc9652, #fc9652, var(--light-orange));
     background-size: 300%;
@@ -502,3 +502,120 @@ section.types{
     color: var(--yellow);
 }
 
+section.about{
+    margin-top: 300px;
+    width: 100%;
+    max-height: 380px;
+}
+
+.about-container{
+    background-image: url(/coffee-page/images/about_bg);
+    background-size: cover;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position: center 45%;
+    width: 100%;
+    height: 350px;
+    max-height: 350px;
+}
+
+.about h1{
+    font: normal 200 55px var(--poppins);
+    color: var(--brown);
+    text-align: center;
+    letter-spacing: 2.8rem;
+}
+
+.about-container p{
+    font-size: 21px;
+    font-family: var(--poppins);
+    font-weight: 300;
+    line-height: 24px;
+    color: var(--dark-gray);
+}
+
+.about-container .p-desc{
+    text-align: center;
+    font-size: 25px;
+    padding-top: 10px;
+}
+
+.info-containers{
+    display: flex;
+    justify-content: space-around;
+}
+
+.about-container .p-jv{
+    margin-left: 80px;
+}
+
+.about-container ul.social{
+    display: flex;
+}
+
+ul.social li{
+    margin: 0 10px;
+}
+
+ul.social li i{
+    font-size: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+section.specialists{
+    width: 100%;
+    height: 300px;
+    margin-top: 200px;
+}
+
+#white-around{
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    width: 80%;
+    height: 285px;
+    background-color: #fff;
+}
+
+.special0{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 500px;
+    background-image: url(/coffee-page/images/bg_special0.jpg);
+    background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.img-container{
+    width: 285px;
+    height: 285px;
+    background-color: #fff;
+    border-radius: 15px 0 0 15px;
+    margin-left: 80px;
+}
+
+.img-container img{
+    max-width: 285px;
+    max-height: 285px;
+    border-radius: 15px 0 0 15px;
+}*/
