@@ -1,9 +1,11 @@
-/*9:40am
-29/1
-coffee v2.7  */
+/*6:30pm
+30/1
+coffee v2.8  */
 @charset "UTF-8";
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
 
 *{
     list-style-type: none;
@@ -15,9 +17,10 @@ a, a:active, a:visited{
 }
 
 :root{
+    --light-brown: #e09c86;
+    --brown: #725145;
     --dark-brown: #4e362f;
     --darker-brown: #352520;
-    --brown: #725145;
     --orange: #e2653f;
     --light-yellow: #e7b557;
     --yellow: #dfc241;
@@ -26,16 +29,18 @@ a, a:active, a:visited{
     --bourbon-light-brown: #a07758;
     --dark-red: #a31519;
     --light-red: #d36266;
-    --light-white:#D7CCC8;
     --white: #fff;
+    --light-gray:#d6d6d6;
     --gray: #757575;
-    --mid-gray: #525252;
-    --dark-gray: #212121;
+    --mid-gray: #474747;
+    --dark-gray: #1b1b1b;
+    --dark-blue: #1d44b1;
     --text-icons: #FFFFFF;
     --divider: #BDBDBD;
     --title: "Kanit";
     --text: "Catamaran";
     --poppins: 'Poppins', sans-serif;
+    --dancing_script: 'Dancing Script', cursive;
 }
 
 html{
@@ -216,28 +221,28 @@ main{
     display: flex;
     position: fixed;
     top: 110%;
-    left: 96.5%;
+    left: 96%;
     align-items: center;
     justify-content: center;
     width: 50px;
     height: 50px;
     border-radius: 50%;
     cursor: pointer;
-    background-color: var(--brown);
+    background-color: #fc9652;
     transition: background-color .2s ease, border-color .2s ease, visibility .2s ease, top .2s ease;
-    border: solid 1px var(--dark-brown);
+    border: solid 1px #ee8549;
     visibility: hidden;
     z-index: 3;
 }
 
 .arrowUp-active{
-    top: 93%;
+    top: 92%;
     visibility: visible;
 }
 
 .arrowUp:hover{
-    background-color: var(--dark-brown);
-    border-color: var(--brown);
+    background-color: #ee8549;
+    border-color: #fc9652;
 }
 
 .arrowUp i {
@@ -502,7 +507,186 @@ section.types{
     color: var(--yellow);
 }
 
-section.about{
+
+section.specialists{
+    display: flex;
+    width: 100%;
+    height: 285px;
+    margin-top: 200px;
+}
+
+/* #white-around{
+    display: flex;
+    align-items: center;
+    width: 70%;
+    height: 300px;
+    background-color: var(--dark-brown);
+} */
+
+.special0{
+    display: flex;
+    width: 100%;
+    min-width: 100vw;
+    height: 300px;
+    background-color: var(--white);
+    justify-content: center;
+    align-items: center;
+}
+
+.spec-angles{
+    display:flex;
+    align-items: center;
+    margin: 0 15px;
+}
+
+.spec-left, .spec-right{
+    display: flex;
+    font-size: 70px;
+    color: var(--light-brown);
+    margin: 0 25px;
+    cursor: pointer;
+    transition: transform .3s ease, color .2s ease;
+}
+
+.spec-left:hover, .spec-right:hover{
+    transform: scale(1.2);
+    color:#dd8365;
+}
+
+.second-bg{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+    height: 290px;
+    /* background-image: url(/coffee-page/images/bg_special0.jpg); */
+    background-image: url(/coffee-page/images/bg_special0.jpg);
+    background-size: cover;
+    background-position: 50% 68%;
+    /* background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 60%; */
+}
+
+.spec-content{
+    display: flex;
+    padding: 0 140px;
+    width: 100%;
+    height: 290px;
+    align-items: center;
+}
+
+.img-container{
+    width: 280px;
+    height: 280px;
+    background-color: black;
+    border-radius: 999px;
+    box-shadow: 1.5px 1.5px 5px rgba(0, 0, 0, 0.4);
+}
+
+.img-container img{
+    border-radius: 999px;
+    max-width: 280px;
+    max-height: 280px;
+}
+
+.name-social{
+    display: flex;
+}
+
+.spec-social{
+    margin-left: 10px;
+    margin-top: 28px;
+}
+
+.spec-social ul{
+    display: flex;
+    justify-content: left;
+    padding: 0;
+    margin: 0;
+}
+
+.spec-social ul li {
+    font-size: 20px;
+    line-height: 25px;
+    margin: 0 5px;
+    color: var(--light-brown);
+}
+
+.spec-info{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-left: 40px;
+    width: 100%;
+}
+
+.spec-info h2{
+    display: inline;
+    text-shadow: 0 0 0 rgba(0, 0, 0, 0.301);
+    margin: 15px 0 0 0 ;
+    font: normal 600 42px var(--dancing_script);
+    color: #fff;
+    line-height: 35px;
+}
+
+.spec-info .label{
+    margin: 0;
+    /* margin-top: 23px;
+    margin-left: 8px; */
+    font: italic 300 17px var(--poppins);
+    line-height: 35px;
+    color: var(--light-brown);
+}
+
+.spec-about{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.spec-about p{
+    display: inline;
+    font: italic 200 20px var(--text);
+    color: #fff;
+    line-height: 25px;
+    text-align: justify;
+    max-width: 92%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* section.about{
     margin-top: 300px;
     width: 100%;
     max-height: 380px;
@@ -559,63 +743,4 @@ ul.social li{
 
 ul.social li i{
     font-size: 30px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* 
-section.specialists{
-    width: 100%;
-    height: 300px;
-    margin-top: 200px;
-}
-
-#white-around{
-    display: flex;
-    align-items: center;
-    border-radius: 15px;
-    width: 80%;
-    height: 285px;
-    background-color: #fff;
-}
-
-.special0{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 500px;
-    background-image: url(/coffee-page/images/bg_special0.jpg);
-    background-color: black;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-}
-
-.img-container{
-    width: 285px;
-    height: 285px;
-    background-color: #fff;
-    border-radius: 15px 0 0 15px;
-    margin-left: 80px;
-}
-
-.img-container img{
-    max-width: 285px;
-    max-height: 285px;
-    border-radius: 15px 0 0 15px;
-}*/
+} */

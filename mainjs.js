@@ -1,8 +1,10 @@
-// v2.7
+// v2.8
 // Show more-content working 
 // Animation more-content working
 // Back-to-top script working
 // Need to make a script that keep type_cont background-position equals to the hover (background color will be static until i close the more-content window) !!!POSTPONE THIS!!!
+
+//Need to do a carrousel of content (.specialists)
 
 // INITIAL SCREEN SLIDE 
 let bgImg = document.querySelector('#img1');
@@ -60,6 +62,7 @@ setInterval(()=>{
 //CHECK SCROLL & CLICK TO GO TO TOP
 let arrowUp = document.querySelector('.arrowUp');
 
+
 window.onscroll = ()=>{
     function scrollFunc() {
         if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -71,6 +74,9 @@ window.onscroll = ()=>{
     scrollFunc();
 }
 
+arrowUp.addEventListener('click', ()=>{
+    document.documentElement.scrollTop = 0;
+})
 
 // TYPE CONTAINER HOVER
 let type_containers = document.querySelectorAll('#type-cont');
@@ -98,5 +104,5 @@ for (let i=1; i < 6; i++) {
     });
 }
 
-
+//
 
