@@ -1,4 +1,4 @@
-// v2.8
+// v2.9
 // Show more-content working 
 // Animation more-content working
 // Back-to-top script working
@@ -76,6 +76,7 @@ window.onscroll = ()=>{
 
 arrowUp.addEventListener('click', ()=>{
     document.documentElement.scrollTop = 0;
+    document.body.scrollTop = 0;
 })
 
 // TYPE CONTAINER HOVER
