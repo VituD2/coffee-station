@@ -1,4 +1,4 @@
-// v2.9
+// v3.0
 // Show more-content working 
 // Animation more-content working
 // Back-to-top script working
