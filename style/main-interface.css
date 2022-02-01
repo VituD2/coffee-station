@@ -1,6 +1,6 @@
-/*7:20am
-31/1
-coffee v3.0  */
+/*7:12am
+1/2
+coffee v3.1  */
 @charset "UTF-8";
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
@@ -27,8 +27,9 @@ a, a:active, a:visited{
     --light-orange: #eea473;
     --bourbon-dark-brown: #582c09;
     --bourbon-light-brown: #a07758;
-    --dark-red: #a31519;
     --light-red: #d36266;
+    --mid-red: #f5545a;
+    --dark-red: #a31519;
     --white: #fff;
     --light-gray:#d6d6d6;
     --gray: #757575;
@@ -533,6 +534,7 @@ section.specialists{
 } */
 
 .special0{
+    position: absolute;
     display: flex;
     width: 100%;
     min-width: 100vw;
@@ -544,19 +546,23 @@ section.specialists{
 }
 
 .spec-angles{
-    display:flex;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
     align-items: center;
-    margin: 0 15px;
+    min-height: calc(100% + 90px);
+    z-index: 5;
+
 }
 
 .spec-left, .spec-right{
-    display: flex;
     font-size: 70px;
     color: var(--light-brown);
     margin: 0 25px;
     cursor: pointer;
     transition: transform .3s ease, color .2s ease;
 }
+
 
 .spec-left:hover, .spec-right:hover{
     transform: scale(1.2);
@@ -644,7 +650,7 @@ section.specialists{
     margin: 0;
     /* margin-top: 23px;
     margin-left: 8px; */
-    font: italic 300 17px var(--poppins);
+    font: italic 400 18px var(--poppins);
     line-height: 35px;
     color: var(--light-brown);
 }
@@ -664,6 +670,10 @@ section.specialists{
     max-width: 92%;
 }
 
+.special1{
+    visibility: hidden;
+}
+
 .second-bg1{
     display: flex;
     align-items: center;
@@ -679,21 +689,25 @@ section.specialists{
     background-position: center 60%; */
 }
 
-.spec-angle1{
-    color: var(--light-yellow);
-}
-
-.spec-angle1:hover{
-    color: #e4a531;
-}
-
 .spec-social1 ul li{
-    color: var(--light-yellow);
+    color: var(--mid-red);
 }
 
 .spec-info1 .label{
+    color: var(--mid-red);
+}
+
+
+
+
+/* 
+.spec-social2 ul li{
     color: var(--light-yellow);
 }
+
+.spec-info2 .label{
+    color: var(--light-yellow);
+} */
 
 
 
