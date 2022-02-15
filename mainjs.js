@@ -1,12 +1,10 @@
-// v3.1
+// v3.2
 // Show more-content working 
 // Animation more-content working
 // Back-to-top script working
 // Need to make a script that keep type_cont background-position equals to the hover (background color will be static until i close the more-content window) !!!POSTPONE THIS!!!
 
-//Need to do a carrousel of content (.specialists)
-//Review arrow fixed
-//If possibly only align-center (remove calc()) 
+//Still need to do a slide of content (.specialists)
 
 // INITIAL SCREEN SLIDE 
 let bgImg = document.querySelector('#img1');
@@ -108,5 +106,5 @@ for (let i=1; i < 6; i++) {
 }
 
 //SPECIALISTS SLIDE 
-let spec_cont = document.querySelector()
+// let spec_cont = document.querySelector()
 

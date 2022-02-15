@@ -1,6 +1,6 @@
-/*7:12am
-1/2
-coffee v3.1  */
+/*10:43pm
+14/2
+coffee v3.2  */
 @charset "UTF-8";
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
@@ -511,10 +511,8 @@ section.types{
 
 section.specialists{
     display: flex;
-    flex-direction: column;
-    align-items: center;
     width: 100%;
-    height: 350px;
+    min-height: 400px;
     margin-top: 150px;
 }
 
@@ -536,9 +534,10 @@ section.specialists{
 .special0{
     position: absolute;
     display: flex;
+    z-index: 1;
     width: 100%;
     min-width: 100vw;
-    height: 320px;
+    height: 350px;
     background-color: var(--white);
     justify-content: center;
     align-items: center;
@@ -548,25 +547,31 @@ section.specialists{
 .spec-angles{
     display: flex;
     justify-content: space-between;
-    width: 100%;
     align-items: center;
-    min-height: calc(100% + 90px);
-    z-index: 5;
-
+    width: 100%;
+    height: 350px;
 }
 
-.spec-left, .spec-right{
-    font-size: 70px;
+.spec-angles i{
+    z-index: 3;
+    font-size: 77px;
     color: var(--light-brown);
-    margin: 0 25px;
     cursor: pointer;
+    margin-top: 7%;
     transition: transform .3s ease, color .2s ease;
 }
 
+.fa-angle-left{
+    margin-left: 20px;
+}
 
-.spec-left:hover, .spec-right:hover{
+.fa-angle-right{
+    margin-right: 20px;
+}
+
+.spec-angles i:hover{
     transform: scale(1.2);
-    color:#dd8365;
+    color:#f19864;
 }
 
 .second-bg{
@@ -646,7 +651,7 @@ section.specialists{
     line-height: 35px;
 }
 
-.spec-info .label{
+.spec-content .label{
     margin: 0;
     /* margin-top: 23px;
     margin-left: 8px; */
@@ -663,15 +668,26 @@ section.specialists{
 
 .spec-about p{
     display: inline;
-    font: normal 200 20px var(--text);
+    font: normal 200 20.5px var(--text);
     color: #fff;
     line-height: 25px;
     text-align: justify;
     max-width: 92%;
+    letter-spacing: 0.3px;
 }
 
+
+/* DANIEL MUNARI */
 .special1{
-    visibility: hidden;
+    position: absolute;
+    display: flex;
+    width: 100%;
+    min-width: 100vw;
+    height: 350px;
+    background-color: var(--white);
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
 }
 
 .second-bg1{
@@ -693,21 +709,9 @@ section.specialists{
     color: var(--mid-red);
 }
 
-.spec-info1 .label{
+.spec-content1 .label{
     color: var(--mid-red);
 }
-
-
-
-
-/* 
-.spec-social2 ul li{
-    color: var(--light-yellow);
-}
-
-.spec-info2 .label{
-    color: var(--light-yellow);
-} */
 
 
 
