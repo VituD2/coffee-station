@@ -1,10 +1,11 @@
-// v3.2
+// v3.3
 // Show more-content working 
 // Animation more-content working
 // Back-to-top script working
 // Need to make a script that keep type_cont background-position equals to the hover (background color will be static until i close the more-content window) !!!POSTPONE THIS!!!
 
 //Still need to do a slide of content (.specialists)
+//Find a new way to slide content
 
 // INITIAL SCREEN SLIDE 
 let bgImg = document.querySelector('#img1');
@@ -106,5 +107,40 @@ for (let i=1; i < 6; i++) {
 }
 
 //SPECIALISTS SLIDE 
-// let spec_cont = document.querySelector()
+// let georgia_info = document.querySelector('.special0');
+// let daniel_info = document.querySelector('special1');
+
+let spec_info = document.querySelectorAll('.spec');
+let previous = document.querySelector('#previous');
+let next = document.querySelector('#next');
+let spec_current = 0;
+
+for (let i=0; i< spec_info.length; i++) {
+    spec_current = spec_info[i].id;
+} 
+
+previous.addEventListener('click', ()=>{
+    spec_current--
+    spec_slide();
+    console.log('previous', spec_current);
+});
+
+next.addEventListener('click', ()=>{
+    spec_current++
+    spec_slide();
+    console.log('next', spec_current);
+});
+
+
+function spec_slide() {
+    if(spec_current >= spec_info.length) {
+        spec_current = 0;
+    } else if(spec_current < 0) {
+        spec_current = spec_info.length - 1;
+    }
+    document.querySelector('#'+[spec_current].classList.add('spec-active'));
+}
+
+spec_slide();
+
 
