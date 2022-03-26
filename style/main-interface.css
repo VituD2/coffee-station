@@ -1,6 +1,9 @@
-/*10:42am
-16/2
-coffee v3.3  */
+/*11:15pm
+25/3
+coffee v3.4  */
+
+/* Commit before , media query be added */
+/* - Possibility to change specialists section in the future , maybe using constructors ? objects ?.. */
 @charset "UTF-8";
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
@@ -509,11 +512,15 @@ section.types{
 }
 
 
+/* SPECIALISTS */
+
 section.specialists{
     display: flex;
     width: 100%;
     min-height: 400px;
     margin-top: 150px;
+    flex-direction: column;
+    align-items: center;
 }
 
 .spec-h1{
@@ -532,18 +539,18 @@ section.specialists{
 } */
 
 .special0{
-    position: absolute;
+    position: relative;
     display: flex;
-    width: 100%;
-    min-width: 100vw;
-    height: 350px;
+    width: 87%;
+    border-radius: 10px;
+    height: 310px;
     background-color: var(--white);
     justify-content: center;
     align-items: center;
     margin: 50px 0;
-    visibility: hidden;
+    /* visibility: hidden;
     height: 0;
-    z-index: 0;
+    z-index: 0; */
 }
 
 .spec-angles{
@@ -581,14 +588,10 @@ section.specialists{
     align-items: center;
     width: 100%;
     max-width: 100%;
-    height: 350px;
-    /* background-image: url(/coffee-page/images/bg_special0.jpg); */
-    background-image: url(/coffee-page/images/bg_special0.jpg);
+    height: 310px;
+    background: black url(/coffee-station/images/bg_special0.jpg) 50% 70% no-repeat ;
     background-size: cover;
-    background-position: 50% 70%;
-    /* background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center 60%; */
+    border-radius: 20px;
 }
 
 .spec-content{
@@ -681,18 +684,18 @@ section.specialists{
 
 /* DANIEL MUNARI */
 .special1{
-    position: absolute;
+    position: relative;
     display: flex;
-    width: 100%;
-    min-width: 100vw;
-    height: 350px;
+    width: 87%;
+    height: 310px;
+    border-radius: 20px;
     background-color: var(--white);
     justify-content: center;
     align-items: center;
     margin: 50px 0;
-    visibility: hidden;
+    /* visibility: hidden;
     height: 0;
-    z-index: 0;
+    z-index: 0; */
 }
 
 .second-bg1{
@@ -701,13 +704,8 @@ section.specialists{
     width: 100%;
     max-width: 100%;
     height: 350px;
-    /* background-image: url(/coffee-page/images/bg_special0.jpg); */
-    background-image: url(/coffee-page/images/bg_special1.jpg);
+    background: black url(/coffee-station/images/bg_special1.jpg) 50% 70% no-repeat;
     background-size: cover;
-    background-position: 50% 70%;
-    /* background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center 60%; */
 }
 
 .spec-social1 ul li{
@@ -718,68 +716,28 @@ section.specialists{
     color: var(--mid-red);
 }
 
-.spec-active{
-    visibility: visible;
-    height: auto;
-    z-index: 2;
-}
+/* ABOUT */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* section.about{
+section.about{
     margin-top: 300px;
     width: 100%;
     max-height: 380px;
 }
 
 .about-container{
-    background-image: url(/coffee-page/images/about_bg);
+    /* background: black url(/coffee-station/images/about_bg) 50% 45% no-repeat;
     background-size: cover;
-    background-color: black;
-    background-repeat: no-repeat;
-    background-position: center 45%;
+     */
+    background-color: var(--brown);
     width: 100%;
-    height: 350px;
+    height: 280px;
     max-height: 350px;
-}
-
-.about h1{
-    font: normal 200 55px var(--poppins);
-    color: var(--brown);
-    text-align: center;
-    letter-spacing: 2.8rem;
 }
 
 .about-container p{
     font-size: 21px;
     font-family: var(--poppins);
-    font-weight: 300;
+    font-weight: 200;
     line-height: 24px;
     color: var(--dark-gray);
 }
@@ -787,12 +745,54 @@ section.specialists{
 .about-container .p-desc{
     text-align: center;
     font-size: 25px;
-    padding-top: 10px;
+    padding-top: 50px;
+    line-height: 20px;
 }
 
 .info-containers{
     display: flex;
     justify-content: space-around;
+    margin-top: 60px;
+}
+
+.jv-cont p{
+    font-size: 21px;
+    font-family: var(--poppins);
+    font-weight: 300;
+    line-height: 24px;
+    color: var(--dark-gray);
+}
+
+.references{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ref-cont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.references ul{
+    font-size: 16px;
+    font-family: var(--poppins);
+    font-weight: 200;
+    line-height: 24px;
+    color: var(--dark-gray);
+    padding: 0;
+    margin: 0;
+}
+
+.references h3{
+    font-size: 21px;
+    font-family: var(--poppins);
+    font-weight: 300;
+    line-height: 24px;
+    color: var(--dark-gray);
+    margin-bottom: 10px;
 }
 
 .about-container .p-jv{
@@ -805,8 +805,17 @@ section.specialists{
 
 ul.social li{
     margin: 0 10px;
+    color: #18100d;
 }
 
 ul.social li i{
     font-size: 30px;
-} */
+}
+
+
+ul.ref li:hover{
+    text-decoration: underline;
+}
+
+
+@media 
