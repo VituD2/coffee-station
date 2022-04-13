@@ -1,6 +1,6 @@
-/*11:15pm
-25/3
-coffee v3.4  */
+/*12:50pm
+13/4
+coffee v3.5  */
 
 /* Commit before , media query be added */
 /* - Possibility to change specialists section in the future , maybe using constructors ? objects ?.. */
@@ -805,14 +805,23 @@ section.about{
 
 ul.social li{
     margin: 0 10px;
-    color: #18100d;
 }
 
 ul.social li i{
+    color: #18100d;
+    transition: .3s ease;
     font-size: 30px;
 }
 
+ul.social li i:hover{
+    color: var(--orange);
+}
 
-ul.ref li:hover{
-    text-decoration: underline;
+ul.ref li a:hover{
+    transition: .3s ease;
+}
+
+ul.ref li a:hover{
+    color: var(--orange);
+    /* text-decoration: underline; */
 }
