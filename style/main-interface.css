@@ -1,6 +1,6 @@
-/*12:50pm
-13/4
-coffee v3.5  */
+/*10:28pm
+27/6
+coffee v3.6  */
 
 /* Commit before , media query be added */
 /* - Possibility to change specialists section in the future , maybe using constructors ? objects ?.. */
@@ -86,7 +86,7 @@ label{
 
 label sup{
     display: inline-table;
-    font-size: 9px;
+    font-size: 10px;
     vertical-align: super;
 }
 
@@ -104,10 +104,11 @@ nav ul li{
     margin: 0 30px;
     font: normal 500 16px var(--text);
     color: var(--brown);
+    transition: .2s ease;
 }
 
 nav ul li:hover{
-    text-decoration: underline;
+    color: var(--orange);
 }
 
 .nav-icon-btns{
@@ -165,8 +166,11 @@ main{
 
 .slide-dots{
     display: flex;
-    margin: auto;
-    margin-top: 705px;
+    position: relative;
+    top: 95%;
+    left: 47%;
+    height: 100%;
+    width: 100%;
 }
 
 .slide-dots i{
@@ -716,9 +720,9 @@ section.specialists{
     color: var(--mid-red);
 }
 
-/* ABOUT */
+/* FOOTER */
 
-section.about{
+.about{
     margin-top: 300px;
     width: 100%;
     max-height: 380px;
